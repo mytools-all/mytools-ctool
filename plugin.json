@@ -1,0 +1,26 @@
+{
+  "name": "mytools-ctool",
+  "description": "Ctool",
+  "apiVersion": 1,
+  "main": "index.html",
+  "pluginName": "Ctool",
+  "version": "0.1.0",
+  "capabilities": [
+    "clipboard.write"
+  ],
+  "features": [
+    {
+      "code": "ctool",
+      "explain": "打开Ctool",
+      "cmds": [
+        "Ctool",
+        "开发工具",
+        "编码",
+        "Base64",
+        "时间戳",
+        "哈希",
+        "正则"
+      ]
+    }
+  ]
+}

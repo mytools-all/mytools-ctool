@@ -1,0 +1,43 @@
+{
+  "name": "@mytools-all/mytools-ctool",
+  "version": "0.1.0",
+  "description": "Ctool",
+  "type": "module",
+  "main": "index.html",
+  "license": "MIT",
+  "author": "MyTools Contributors",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mytools-all/mytools-ctool.git"
+  },
+  "homepage": "https://github.com/mytools-all/mytools-ctool#readme",
+  "bugs": {
+    "url": "https://github.com/mytools-all/mytools-ctool/issues"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "files": [
+    "plugin.json",
+    "*.html",
+    "*.css",
+    "*.svg",
+    "*.png",
+    "vendor/",
+    "LICENSE",
+    "THIRD_PARTY.md",
+    "README.md",
+    "app.mjs",
+    "common.mjs",
+    "md5.mjs",
+    "regex-worker.mjs",
+    "utils.mjs",
+    "yaml.mjs",
+    "*.js",
+    "*.LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test"
+  }
+}

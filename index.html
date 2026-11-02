@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Ctool</title>
+    <link rel="stylesheet" href="tool.css" />
+    <style></style>
+  </head>
+  <body>
+    <main>
+      <div class="toolbar">
+        <strong>Ctool</strong
+        ><input
+          id="tool-search"
+          placeholder="搜索工具"
+          aria-label="搜索工具"
+        /><span class="spacer"></span><button id="copy">复制结果</button
+        ><button id="theme">◐</button>
+      </div>
+      <div class="workspace">
+        <nav id="tools" class="sidebar"></nav>
+        <section class="content stack">
+          <div class="row">
+            <strong id="title"></strong><span class="spacer"></span
+            ><select id="operation" aria-label="操作"></select
+            ><button id="run" class="primary">执行</button>
+          </div>
+          <div id="extra"></div>
+          <textarea
+            id="input"
+            style="flex: 1"
+            placeholder="输入内容…"
+            aria-label="工具输入"
+            spellcheck="false"
+          ></textarea>
+          <div class="row">
+            <span class="muted">结果</span><span class="spacer"></span
+            ><button id="swap">结果作为输入 ↑</button>
+          </div>
+          <textarea
+            id="output"
+            style="flex: 1"
+            readonly
+            aria-label="工具结果"
+          ></textarea>
+        </section>
+      </div>
+      <footer id="status" class="status" role="status"></footer>
+    </main>
+    <script type="module" src="app.mjs"></script>
+  </body>
+</html>
